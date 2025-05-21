@@ -1,7 +1,7 @@
 .loader {
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   display: none;
   margin: 20px auto;
 }
@@ -133,4 +133,22 @@ body {
   display: block;
   font-weight: 600;
   line-height: 1.33;
+}
+
+.load-more {
+  margin: 32px auto 44px;
+  padding: 8px 16px;
+  background-color: #4e75ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  width: 125px;
+}
+
+.load-more.hidden {
+  display: none;
 }

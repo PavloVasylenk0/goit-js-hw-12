@@ -7,13 +7,15 @@ const API_KEY = '50283809-fb8098277938dfac7f33d4612';
 //   return new Promise(resolve => setTimeout(resolve, ms));
 // }
 
-export async function getImagesByQuery(query) {
+export async function getImagesByQuery(query, page) {
   const params = {
     key: API_KEY,
     q: query,
     image_type: 'photo',
     orientation: 'horizontal',
     safesearch: true,
+    per_page: 15,
+    page,
   };
 
   // await delay(1000);
