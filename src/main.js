@@ -22,7 +22,7 @@ let totalHits = 0;
 form.addEventListener('submit', async event => {
   event.preventDefault();
 
-  const query = form.elements['search-text'].value.trim();
+  query = form.elements['search-text'].value.trim();
   page = 1;
 
   clearGallery();
